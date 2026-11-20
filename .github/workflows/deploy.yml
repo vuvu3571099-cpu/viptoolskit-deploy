@@ -13,7 +13,7 @@ jobs:
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
         run: |
-          curl --ftp-pasv --ftp-create-dirs -T "files/blog/how-to-convert-text-to-uppercase/index.html" "ftp://$FTP_USER:$FTP_PASS@45.130.228.16/blog/how-to-convert-text-to-uppercase/index.html"
-          curl --ftp-pasv --ftp-create-dirs -T "files/blog/how-to-convert-text-to-uppercase/hero.jpg" "ftp://$FTP_USER:$FTP_PASS@45.130.228.16/blog/how-to-convert-text-to-uppercase/hero.jpg"
+          curl --ftp-pasv --ftp-create-dirs -T "files/blog/how-to-convert-webpage-to-pdf/index.html" "ftp://$FTP_USER:$FTP_PASS@45.130.228.16/blog/how-to-convert-webpage-to-pdf/index.html"
+          curl --ftp-pasv --ftp-create-dirs -T "files/blog/how-to-convert-webpage-to-pdf/hero.jpg" "ftp://$FTP_USER:$FTP_PASS@45.130.228.16/blog/how-to-convert-webpage-to-pdf/hero.jpg"
           curl --ftp-pasv -T "files/blog/index.html" "ftp://$FTP_USER:$FTP_PASS@45.130.228.16/blog/index.html"
           curl --ftp-pasv -T "files/sitemap.xml" "ftp://$FTP_USER:$FTP_PASS@45.130.228.16/sitemap.xml"
